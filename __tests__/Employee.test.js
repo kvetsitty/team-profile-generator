@@ -1,5 +1,9 @@
 const Employee = require('../lib/Employee');
 
-test('checks if 10 is equal to 10', () => {
-  expect(checkIfEqual(10, 10)).toBe(true);
+const employee = new Employee(name, id, email);
+
+test("create an employee object", () => {
+    expect(employee.name).toEqual(name);
+    expect(employee.id).toEqual(id);
+    expect(employee.email).toEqual(email);
 });
