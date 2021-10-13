@@ -1,17 +1,17 @@
 const inquirer = require('inquirer');
 const Engineer = require('./lib/Engineer');
 const Manager = require('./lib/Manager');
-const teamArray = [];
 const Intern = require('./lib/Intern');
 const generateHTML = require('./dist/generateHTML');
 const fs = require('fs');
+const teamArray = [];
 
 function mainMenu() {
     inquirer.prompt({
         type: 'list',
         name: 'action',
         message: 'Who would you like to add?',
-        choices: ['Add a manager', 'Add an engineer', 'Add an intern', 'Build a team']
+        choices: ['Add a manager', 'Add an engineer', 'Add an intern', 'Finish Building Team']
     })
     .then(function(answers) {
         const choice = answers.action;
