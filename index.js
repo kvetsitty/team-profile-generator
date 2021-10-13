@@ -104,7 +104,7 @@ function addIntern () {
         },
         {
             type: 'input',
-            name: 'github',
+            name: 'school',
             message: "Where did the intern attend school?",
         }])
         .then(function(answers) {
