@@ -1,6 +1,5 @@
 .employee-card {
-box-shadow: 8px 7px 5px grey;
-margin: 2vh
+margin: 10px
 }
 
 .card-head {
@@ -18,11 +17,11 @@ font-size: 3vh;
 .card-body {
 text-align: center;
 height: 23vh;
-border: sold black 5px 
+border: solid rgb(134, 134, 134) 2px 
 }
       
 .body-info {
-border: solid black 2px
+border: solid rgb(134, 134, 134) 1px
 }
       
 .body-info p {
@@ -43,9 +42,9 @@ margin-top: 1vh;
       
 .header-text {
 text-align: center;
-background-color: #004593;
+background-color: #f0324b;
 color: white;
-height: 7vh;
+height: 70px;
 align-self: center;
 width: 98%;
 margin: auto;
