@@ -4,6 +4,7 @@ const Manager = require('./lib/Manager');
 const teamArray = [];
 const Intern = require('./lib/Intern');
 const generateHTML = require('./dist/generateHTML');
+const fs = require('fs');
 
 function mainMenu() {
     inquirer.prompt({
@@ -109,12 +110,13 @@ function addIntern () {
         .then(function(answers) {
             const intern = new Intern(answers.name, answers.ID, answers.email, answers.school);
             teamArray.push(intern);
+            console.log(teamArray);
             mainMenu();
         })
-}
+};
 
 function buildTeam() {
-    fs.writeFileSync(generateHTML(teamArray))
+    fs.writeFileSync('./dist/index.html', generateHTML(teamArray))
 }
 
 mainMenu();
